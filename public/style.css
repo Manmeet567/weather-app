@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    padding: 40px;
+    background-color:rgb(27, 152, 255);
+    border-radius:10px;
+}
+.container h1{
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container form{
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+}
+.container form input:nth-child(1){
+    background-color:transparent;
+    border: none;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    outline: none;
+}
+.container form input:nth-child(1)::placeholder{
+    color: white;
+}
+.container form input:nth-child(2){
+    background-color:white;
+    color: rgb(27, 152, 255);
+    border: none;
+    border-radius:5px;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.container .info{
+    text-align: center;
+    color: white;
+}
+.container .info .city-name h2{
+    font-size: 30px;
+    margin: 5px 0;
+}
+.container .info .temp p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.container .info .desc p{
+    font-size: 35px;
+}
+@media screen and (max-width: 768px){
+    .container{
+        margin: 30px;
+    }
+}
